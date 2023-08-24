@@ -6,7 +6,7 @@ export default function DashboardPage(){
       <Layout title='Dashboard Page'>
         <main>
           <p>Dashboard Page</p>
-          <h1>Selamat datang di SMK N 5 Surakarta </h1> 
+          <h1>Selamat datang di Toko Al-barokah </h1> 
         </main>
       </Layout>
     </>
