@@ -3,7 +3,7 @@ import { Button, Group, Modal, Select, TextInput, Textarea } from "@mantine/core
 import { useForm } from '@mantine/form';
 import { useMutation } from "@tanstack/react-query";
 import { useEffect } from "react";
-// import { notifications } from '@mantine/notifications';
+import { notifications } from '@mantine/notifications';
 
 const handleValidateForm = (data, field) => {
   return (data === '' || data === null ? `${field} must filled` : null)
@@ -42,18 +42,18 @@ export default function EditDataForm(props) {
       if(response.status === 200) {
         handleCloseModal();
         props.refetch();
-        // notifications.show({
-        //   title: 'Success',
-        //   message: 'Success edited data!',
-        // })
+        notifications.show({
+          title: 'Success',
+          message: 'Success edited data!',
+        })
       }
     },
     onError: () => {
-      // notifications.show({
-      //   title: 'Failed',
-      //   message: 'Failed edit data!',
-      //   color: 'red'
-      // })
+      notifications.show({
+        title: 'Failed',
+        message: 'Failed edit data!',
+        color: 'red'
+      })
     }
   });
 

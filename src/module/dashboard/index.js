@@ -7,6 +7,7 @@ export default function DashboardPage(){
         <main>
           <p>Dashboard Page</p>
           <h1>Selamat datang di Toko Al-barokah </h1> 
+          <h3></h3>
         </main>
       </Layout>
     </>
